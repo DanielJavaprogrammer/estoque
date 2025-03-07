@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     max-width: 100%;
     height: 100%;
 }
 
-header{
+header {
     position: relative;
     width: 100%;
     height: 70px;
@@ -21,25 +21,25 @@ header{
     font-size: 1rem;
 }
 
-.headerLogo{
+.headerLogo {
     padding-left: 50px;
 }
 
-.headerLogo a{
+.headerLogo a {
     text-decoration: none;
     color: #fff;
     display: flex;
     align-items: center;
 }
 
-#desk_nav{
+#desk_nav {
     display: flex;
     align-items: center;
     /* background-color: red; */
     height: 100%;
 }
 
-#desk_nav a{
+#desk_nav a {
     height: 100%;
     display: flex;
     align-items: center;
@@ -48,11 +48,11 @@ header{
     color: #fff;
 }
 
-#desk_nav a:hover{
-    background-color: rgb(39, 39, 39) ;
+#desk_nav a:hover {
+    background-color: rgb(39, 39, 39);
 }
 
-#add_button{
+#add_button {
     height: 100%;
     background-color: #000080;
     display: flex;
@@ -61,7 +61,7 @@ header{
     gap: 10px;
 }
 
-#add_button a{
+#add_button a {
     height: 100%;
     display: flex;
     align-items: center;
@@ -69,7 +69,7 @@ header{
     color: #fff;
 }
 
-#add_button span{
+#add_button span {
     color: #fff;
 }
 
@@ -80,7 +80,7 @@ a#add-item {
 }
 
 /* menu mobile e icone Hamburguer */
-#menu-icon{
+#menu-icon {
     color: #fff;
     padding: 0 15px;
     height: 100%;
@@ -88,13 +88,14 @@ a#add-item {
     align-items: center;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 20px;
+    cursor: pointer;
 }
 
-#menu-icon:hover{
+#menu-icon:hover {
     background-color: #313131;
 }
 
-#mobile_nav{
+#mobile_nav {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -107,21 +108,23 @@ a#add-item {
     height: 100vh;
     transition: all .5s ease-in;
 }
-#mobile_nav a{
+
+#mobile_nav a {
     padding: 20px;
     text-decoration: none;
     color: #fff;
 }
 
-#btn-closeMenu{
+#btn-closeMenu {
     color: rgb(255, 255, 255);
     font-size: 1.4rem;
     background-color: #0d0d3a;
     text-align: center;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
-a#add-item-mobile{
+a#add-item-mobile {
     background-color: #fff;
     color: black;
     display: flex;
@@ -133,13 +136,13 @@ a#add-item-mobile{
 
 /* Media Queries */
 
-@media screen and (max-width: 1078px){
-    .headerLogo{
+@media screen and (max-width: 1078px) {
+    .headerLogo {
         padding-left: 10px;
         font-size: .7rem;
     }
 
-    #add_button{
+    #add_button {
         padding: 0 25px;
     }
 
@@ -147,19 +150,19 @@ a#add-item-mobile{
         display: none;
     }
 
-    #desk_nav a{
-       padding: 10px;
+    #desk_nav a {
+        padding: 10px;
     }
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) {
+
     #desk_nav,
-    #add_button
-    {
+    #add_button {
         display: none;
     }
 
-    #menu-icon{
+    #menu-icon {
         display: flex;
     }
 }
