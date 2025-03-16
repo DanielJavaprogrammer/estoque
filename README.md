@@ -1,1 +1,1 @@
----Conexão do Banco de dados está em config, arquivo database.php;
+Arquivo de conexao na pasta config -- database.php
